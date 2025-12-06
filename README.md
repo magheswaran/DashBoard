@@ -7,11 +7,11 @@ Perfect for SaaS platforms, CRM systems, product analytics dashboards, or educat
 
 ## 🌍 Live Demo
 
-👉 💡 Preview the site instantly via [Netlify Demo](https://dashboard-tcss.netlify.app)
-
 <p align="center">
   <img src="https://github.com/magheswaran/DashBoard/blob/b341ce7cae6b64fcb0c0448bf46ad0c70f46b5d8/assests/dashboardUI.png" width="850" alt="SuperCorp Admin Dashboard Preview">
 </p>
+
+💡 Preview the site instantly via [Netlify Demo](https://dashboard-tcss.netlify.app) 
 
 ---
 
