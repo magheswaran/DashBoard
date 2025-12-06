@@ -1,9 +1,3 @@
-Perfect bro 👍
-Here is your **final professional README.md** updated with your links, image & deployment URL 👇
-Copy–paste directly to GitHub.
-
----
-
 # 📊 SuperCorp Admin Dashboard – TailwindCSS + Chart.js
 
 **SuperCorp Dashboard** is a modern, responsive **Admin Panel UI** built using **Tailwind CSS** and **Chart.js**, featuring clean layout, interactive visual charts, and a professional analytics interface.
@@ -13,7 +7,7 @@ Perfect for SaaS platforms, CRM systems, product analytics dashboards, or educat
 
 ## 🌍 Live Demo
 
-👉 **Live Site:** [https://dashboard-tcss.netlify.app/](https://dashboard-tcss.netlify.app/)
+👉 💡 Preview the site instantly via [Netlify Demo](https://dashboard-tcss.netlify.app)
 
 <p align="center">
   <img src="https://github.com/magheswaran/DashBoard/blob/b341ce7cae6b64fcb0c0448bf46ad0c70f46b5d8/assests/dashboardUI.png" width="850" alt="SuperCorp Admin Dashboard Preview">
@@ -142,9 +136,3 @@ Feedback & Pull Requests are welcome
 Let’s build and scale amazing UI together 🚀
 
 ---
-
-If you want — I can create **Badges**, **Shields**, and **Tech Icons** for the top of your README like:
-
-`![Tailwind](...) | ![Chart.js](...) | ![Netlify](...)`
-
-Want them included? 👉 Yes / No 🚀🔥
