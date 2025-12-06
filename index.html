@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <section class="dashboard flex">
+        <div class="dashboard-left flex-1 bg-blue-900  ">
+            <h3 class="bg-blue-800 uppercase text-xl text-white p-3 font-bold">
+                Super Corp
+            </h3>
+            <div class="dashboard-left-content p-3 text-white">
+                <h3 class="uppercase text-sm font-medium">Pages</h3>
+                <div class="dashboard-left-features leading-9 py-3">
+                    <h3 class="font-bold">🖥️ Dashboard</h3>
+                    <h3 class="font-bold">🛃 Customers</h3>
+                    <h3 class="font-bold">📋 Campaign</h3>
+                    <h3 class="font-bold">🚂 Orders</h3>
+                    <h3 class="font-bold">📤 Messages</h3>
+                    <h3 class="font-bold">📱 Apps</h3>
+                    <h3 class="font-bold">🪛 Settings</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-right flex-4 bg-blue-100">
+            <nav class="flex px-3 py-2 justify-between items-center shadow-md shadow-gray-200 bg-white">
+                <div class="userprofile flex items-center gap-3">
+                    <img src="./assests/user.png" alt="" class="h-[50px] w-[50px] rounded-full" />
+                    <h3 class="font-bold ">Magheswaran</h3>
+                </div>
+                <div class="logos flex items-center gap-5">
+                    <img src="./assests/search.png" alt="" class="w-[25px] h-[25px]" />
+                    <img src="./assests/message.png" alt="" class="w-[25px] h-[25px]" />
+                    <img src="./assests/caution.png" alt="" class="w-[25px] h-[25px]" />
+                    <a href="" class="text-blue-700 font-bold no-underline">Logout</a>
+                </div>
+            </nav>
+            <div class="greet bg-blue-200 p-5 leading-10 m-5 rounded-2xl">
+                <h3 class="text-3xl font-bold">Good Morning, super Inc 👋</h3>
+                <p class="font-medium">
+                    These are the stats for today, have a good day
+                </p>
+            </div>
+
+            <div class="grid m-5 grid-cols-2 gap-5">
+                <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white">
+                    <img src="./assests/wallet.png" alt="" class="w-[25px] h-[25px] my-2" />
+                    <h3 class="font-bold text-xl">Super plus</h3>
+                    <h3 class="text-md font-medium text-gray-500">SALES</h3>
+                    <h3 class="text-3xl font-bold">
+                        $95,554
+                        <span class="text-lg font-bold bg-green-500 rounded-2xl px-1 text-white">+93%</span>
+                    </h3>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white">
+                    <img src="./assests/wallet.png" alt="" class="w-[25px] h-[25px] my-2" />
+                    <h3 class="font-bold text-xl">Super pro</h3>
+                    <h3 class="text-md font-medium text-gray-500">SALES</h3>
+                    <h3 class="text-3xl font-bold">
+                        $35,554
+                        <span class="text-lg font-bold bg-red-500 rounded-2xl px-1 text-white">-19%</span>
+                    </h3>
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white">
+                    <img src="./assests/wallet.png" alt="" class="w-[25px] h-[25px] my-2" />
+                    <h3 class="font-bold text-xl">Super plus</h3>
+                    <h3 class="text-md font-medium text-gray-500">SALES</h3>
+                    <h3 class="text-3xl font-bold">
+                        $95,554
+                        <span class="text-lg font-bold bg-green-500 rounded-2xl px-1 text-white">+93%</span>
+                    </h3>
+                    <canvas id="myChart3"></canvas>
+                </div>
+                <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white">
+                    <img src="./assests/wallet.png" alt="" class="w-[25px] h-[25px] my-2" />
+                    <h3 class="font-bold text-xl">Super pro</h3>
+                    <h3 class="text-md font-medium text-gray-500">SALES</h3>
+                    <h3 class="text-3xl font-bold">
+                        $35,554
+                        <span class="text-lg font-bold bg-red-500 rounded-2xl px-1 text-white">-19%</span>
+                    </h3>
+                    <canvas id="myChart4"></canvas>
+                </div>
+                <div class="grid-child col-span-2">
+                    <div class="flex gap-4">
+                        <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white flex-1">
+
+                            <h3 class="font-bold text-xl">Top Countries</h3>
+
+                            <canvas id="myChart5"></canvas>
+                        </div>
+                        <div class="p-5 leading-9 shadow shadow-xl rounded-2xl bg-white flex-4">
+
+                            <h3 class="font-bold text-xl">Top Channel</h3>
+                            <div class="grid grid-cols-5 py-2">
+                                <div class="">
+                                    <h3 class="font-bold border-b-2 bg-gray-100">SOURCE</h3>
+                                    <h2 class=" border-b-2">GitHub</h2>
+                                    <h2 class=" border-b-2">Youtube</h2>
+                                    <h2 class=" border-b-2">Instgram</h2>
+                                    <h2 class=" border-b-2">Twitter</h2>
+                                    <h2 class=" border-b-2">Telegram</h2>
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold border-b-2 bg-gray-100">VISITORS</h3>
+                                    <h2 class=" border-b-2">2.4k</h2>
+                                    <h2 class=" border-b-2">2.4k</h2>
+                                    <h2 class=" border-b-2">2.4k</h2>
+                                    <h2 class=" border-b-2">2.4k</h2>
+                                    <h2 class=" border-b-2">2.4k</h2>
+
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold border-b-2 bg-gray-100">REVENUE</h3>
+                                    <h2 class=" border-b-2">$14,000</h2>
+                                    <h2 class=" border-b-2">$14,000</h2>
+                                    <h2 class=" border-b-2">$14,000</h2>
+                                    <h2 class=" border-b-2">$14,000</h2>
+                                    <h2 class=" border-b-2">$14,000</h2>
+
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold border-b-2 bg-gray-100">SALES</h3>
+                                    <h2 class=" border-b-2">450</h2>
+                                    <h2 class=" border-b-2">450</h2>
+                                    <h2 class=" border-b-2">450</h2>
+                                    <h2 class=" border-b-2">450</h2>
+                                    <h2 class=" border-b-2">450</h2>
+
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold border-b-2 bg-gray-100">CONVERSIONS </h3>
+                                    <h2 class=" border-b-2">8.9</h2>
+                                    <h2 class=" border-b-2">8.9</h2>
+                                    <h2 class=" border-b-2">8.9</h2>
+                                    <h2 class=" border-b-2">8.9</h2>
+                                    <h2 class=" border-b-2">8.9</h2>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <script src="./charts.js">
+
+    </script>
+</body>
+
+</html>
